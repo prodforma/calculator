@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff; /* Белый фон калькулятора */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px; /* Ширина калькулятора */
+}
+
+#display {
+    width: 100%;
+    height: 60px; /* Высота дисплея */
+    font-size: 32px; /* Размер шрифта */
+    border: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Все кнопки равного размера */
+    gap: 10px;
+}
+
+.btn {
+    background-color: #000000; /* Черный фон кнопок */
+    color: #ffffff; /* Белый текст на кнопках */
+    border: none;
+    padding: 20px;
+    font-size: 24px; /* Размер шрифта */
+    border-radius: 10px; /* Чуть закругленные углы */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Кнопки занимают всю ширину ячейки */
+    height: 70px; /* Фиксированная высота кнопок */
+}
+
+.btn:hover {
+    background-color: #350080; /* Темно-серый при наведении */
+}
+
+.equal {
+    background-color: #350080; /* Фиолетовый фон кнопки "=" */
+    color: #ffffff; /* Белый текст на кнопке "=" */
+    grid-column: span 2; /* Кнопка "=" занимает две колонки */
+    height: 70px; /* Высота кнопки */
+}
+
+.equal:hover {
+    background-color: #6a006a; /* Темный фиолетовый при наведении */
+}
