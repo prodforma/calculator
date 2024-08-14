@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden; /* Запрещает прокрутку страницы */
 }
 
 /* Стили для калькулятора */
@@ -38,7 +39,8 @@ body {
 /* Сетка для кнопок */
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Все кнопки равного размера */
+    grid-template-columns: repeat(4, 1fr); /* 4 равных колонки */
+    grid-template-rows: repeat(5, 1fr); /* 5 равных строк */
     gap: 10px;
 }
 
@@ -47,7 +49,6 @@ body {
     background-color: #000000; /* Черный фон кнопок */
     color: #ffffff; /* Белый текст на кнопках */
     border: none;
-    padding: 20px;
     font-size: 24px; /* Размер шрифта */
     border-radius: 10px; /* Чуть закругленные углы */
     cursor: pointer;
@@ -67,10 +68,9 @@ body {
 .equal {
     background-color: #350080; /* Фиолетовый фон кнопки "=" */
     color: #ffffff; /* Белый текст на кнопке "=" */
-    grid-column: span 2; /* Кнопка "=" занимает две колонки */
-    height: 70px; /* Высота кнопки */
 }
 
 .equal:hover {
     background-color: #6a006a; /* Темный фиолетовый при наведении */
 }
+
